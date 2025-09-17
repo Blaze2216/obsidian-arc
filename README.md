@@ -21,8 +21,10 @@ A modern React application built with Vite, featuring a dark cosmic theme and li
 
 ### Prerequisites
 
-- Node.js (version 14 or higher)
+- Node.js (version 16 or higher) - **Important: This project requires Node.js v16+ due to Vite requirements**
 - npm or yarn
+
+> **Note**: If you're running Node.js v12, you'll need to upgrade to v16 or higher to run this project. The current system is running Node.js v12.22.9, which is not compatible with Vite and modern React tooling.
 
 ### Installation
 
