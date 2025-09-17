@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cosmic-gradient {
+  background: linear-gradient(135deg, #000000 0%, #1A1A1A 50%, #000000 100%);
+}
+
+.cosmic-accent {
+  color: #00BFFF;
+}
+
+.cosmic-border {
+  border-color: #1A1A1A;
+}
+
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+}
