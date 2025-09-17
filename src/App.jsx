@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
+import Showcase from './pages/Showcase'
 import './App.css'
 
 // Placeholder components for routes
@@ -27,15 +28,6 @@ const Pricing = () => (
     <div className="text-center">
       <h1 className="text-4xl font-bold text-cosmic-blue mb-4">Pricing</h1>
       <p className="text-gray-300">Choose your cosmic journey...</p>
-    </div>
-  </div>
-)
-
-const Showcase = () => (
-  <div className="min-h-screen bg-black text-white flex items-center justify-center">
-    <div className="text-center">
-      <h1 className="text-4xl font-bold text-cosmic-blue mb-4">Showcase</h1>
-      <p className="text-gray-300">Discover amazing videos created with Obsidian Arc...</p>
     </div>
   </div>
 )

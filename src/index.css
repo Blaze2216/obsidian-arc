@@ -30,6 +30,11 @@ body {
   min-height: 100vh;
 }
 
+/* Utility classes for consistent styling */
+.font-orbitron {
+  font-family: 'Orbitron', monospace;
+}
+
 /* Custom scroll animations */
 @keyframes scroll {
   0% { transform: translateX(0); }
