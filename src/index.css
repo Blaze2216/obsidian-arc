@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap');
 
 :root {
   --cosmic-black: #000000;
@@ -19,6 +19,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--cosmic-black);
   color: white;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -27,4 +28,55 @@ body {
 
 #root {
   min-height: 100vh;
+}
+
+/* Custom scroll animations */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+/* Pause animation on hover */
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
+/* Custom glow effects */
+.glow-blue {
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
+}
+
+.glow-blue:hover {
+  box-shadow: 0 0 30px rgba(0, 191, 255, 0.5);
+}
+
+/* Smooth transitions for better UX */
+.transition-all {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Responsive text scaling */
+@media (max-width: 640px) {
+  .text-responsive-xl {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  
+  .text-responsive-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .animate-scroll,
+  .animate-pulse,
+  .animate-bounce {
+    animation: none;
+  }
 }
